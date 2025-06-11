@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Generator App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+</head>
+<body>
+    
+    <!-- Part 1 for selecting category -->
+    <div class="container" id="start-screen">
+        <h1>Welcome to Ultimate - Quiz - App🚀</h1>
+        <select name="" id="category-select">
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="General">General</option>
+        </select>
+        <button id="start-btn">Start Quiz</button>
+
+    </div>
+    <!-- part 2 for questions, options and timer -->
+    <div class="container" id="quiz-screen">
+        <h2 id="question-box"></h2>
+        <div id="option-box"></div>
+        <div id="timer">Time Left : <span id="time">10</span></div>
+    </div>
+
+    <!-- part 3 for score and rank in leaderboard -->
+     <div class="container" id="result-screen">
+        <h2>Quiz Completed</h2>
+        <h3>Your Score <span id="score"></span></h3>
+        <h3>Leaderboard</h3>
+        <ul id="leaderboard"></ul>
+        <button onclick="location.reload()">Reattempt Quiz</button>
+     </div>
+
+     <script src="script.js"></script>
+    <script src="question.js"></script>
+    
+</body>
+</html>
